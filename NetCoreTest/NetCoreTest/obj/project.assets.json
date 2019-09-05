@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Dapper/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {}
+        }
+      },
       "Humanizer/2.6.2": {
         "type": "package",
         "dependencies": {
@@ -4442,7 +4454,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
@@ -5242,6 +5254,19 @@
     }
   },
   "libraries": {
+    "Dapper/2.0.4": {
+      "sha512": "DrNPDqK3nR4RpwAPX2R0R34YhlT+k5Fbw7UnqxQ2aH+wSWvEIj+fCDXB8RJWgw6fGFZLavq7nuJ6J/eAqSrIpw==",
+      "type": "package",
+      "path": "dapper/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapper.2.0.4.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "Humanizer/2.6.2": {
       "sha512": "UKsgf/9QcZT5QuKE+Lb/+b0jn9sQNkUMHG0wbkTQOEVUihoFCLKDo04fVZignPyztyCoKx/X7RCySldxxHEeXg==",
       "type": "package",
@@ -14020,6 +14045,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Dapper >= 2.0.4",
       "Humanizer >= 2.6.2",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -14034,11 +14060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
+      "projectUniqueName": "E:\\worktest\\xjlehelehe\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
       "projectName": "NetCoreTest",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
+      "projectPath": "E:\\worktest\\xjlehelehe\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\NetCoreTest\\NetCoreTest\\obj\\",
+      "outputPath": "E:\\worktest\\xjlehelehe\\NetCoreTest\\NetCoreTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14068,6 +14094,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.4, )"
+          },
           "Humanizer": {
             "target": "Package",
             "version": "[2.6.2, )"
